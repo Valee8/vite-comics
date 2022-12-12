@@ -66,7 +66,7 @@ export default {
 
             <nav>
                 <ul>
-                    <li v-for="links in headerLinks">
+                    <li v-for="(links, index) in headerLinks" :key="index">
                         <a :href="links.url">
                             {{links.text}}
                             <div class="border-hover"></div>
