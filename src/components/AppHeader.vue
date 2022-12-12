@@ -59,20 +59,22 @@ export default {
 <template>
 
     <header>
-        <a href="#">
+        <div class="container">
+            <a href="#">
                 <img :src="getImagePath(`/img/${imgLogo}`)" alt="Logo DC">
             </a>
 
-        <nav>
-            <ul>
-                <li v-for="links in headerLinks">
-                    <a :href="links.url">
-                        {{links.text}}
-                        <div class="border-hover"></div>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li v-for="links in headerLinks">
+                        <a :href="links.url">
+                            {{links.text}}
+                            <div class="border-hover"></div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     
 </template>
