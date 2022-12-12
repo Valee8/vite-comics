@@ -7,42 +7,52 @@ export default {
                 {
                     text: 'Characters',
                     url: '#',
+                    active: true,
                 },
                 {
                     text: 'Comics',
                     url: '#',
+                    active: false,
                 },
                 {
                     text: 'Movies',
                     url: '#',
+                    active: false,
                 },
                 {
                     text: 'Tv',
                     url: '#',
+                    active: false,
                 },
                 {
                     text: 'Games',
                     url: '#',
+                    active: false,
                 },
                 {
                     text: 'Collectibles',
                     url: '#',
+                    active: false,
                 },
                 {
                     text: 'Videos',
                     url: '#',
+                    active: false,
                 },
                 {
                     text: 'Fans',
                     url: '#',
+                    active: false,
                 },
                 {
                     text: 'News',
                     url: '#',
+                    active: false,
                 },
                 {
                     text: 'Shop',
                     url: '#',
+                    active: false,
                 }
 
             ]
@@ -69,7 +79,7 @@ export default {
                     <li v-for="(links, index) in headerLinks" :key="index">
                         <a :href="links.url">
                             {{links.text}}
-                            <div class="border-hover"></div>
+                            <div :class="{border: links.active}"></div>
                         </a>
                     </li>
                 </ul>
@@ -103,7 +113,7 @@ header {
             height: 95px;
             padding: 0 10px;
 
-            &:hover .border-hover {
+            .border {
                 background-color: $hover;
                 height: 4px;
                 width: 35px;
