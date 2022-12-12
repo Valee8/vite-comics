@@ -71,7 +71,7 @@ export default {
     <header>
         <div class="container">
             <a href="#">
-                <img :src="getImagePath(`/img/${imgLogo}`)" alt="Logo DC">
+                <img :src="getImagePath(`/img/${imgLogo}`)" alt="Logo DC" class="logo">
             </a>
 
             <nav>
@@ -104,6 +104,11 @@ header {
         height: 95px;
     }
 
+    .logo {
+        vertical-align: middle;
+        height: 70px;
+    }
+
     ul {
         display: flex;
         justify-content: space-between;
@@ -115,14 +120,6 @@ header {
             height: 95px;
             padding: 0 10px;
 
-            .border {
-                background-color: $hover;
-                height: 4px;
-                width: 35px;
-                position: absolute;
-                bottom: 0;
-            }
-
         }
 
         li a {
@@ -133,6 +130,14 @@ header {
             text-transform: uppercase;
             color: #5E5F5E;
             font-weight: bold;
+
+            .border {
+                background-color: $hover;
+                height: 4px;
+                width: 35px;
+                position: absolute;
+                bottom: 0;
+            }
 
             &:hover, &.active {
                 color: $hover;
