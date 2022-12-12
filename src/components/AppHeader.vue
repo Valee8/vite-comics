@@ -120,28 +120,28 @@ header {
             height: 95px;
             padding: 0 10px;
 
-        }
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                text-transform: uppercase;
+                color: #5E5F5E;
+                font-weight: bold;
 
-        li a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100%;
-            text-transform: uppercase;
-            color: #5E5F5E;
-            font-weight: bold;
+                .border {
+                    background-color: $hover;
+                    height: 4px;
+                    width: 35px;
+                    position: absolute;
+                    bottom: 0;
+                }
 
-            .border {
-                background-color: $hover;
-                height: 4px;
-                width: 35px;
-                position: absolute;
-                bottom: 0;
+                &:hover, &.active {
+                    color: $hover;
+                }
             }
 
-            &:hover, &.active {
-                color: $hover;
-            }
         }
     }
 }
