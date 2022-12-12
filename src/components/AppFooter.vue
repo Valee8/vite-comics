@@ -223,7 +223,7 @@ export default {
 footer {
     background-image: url('/img/dc-logo-bg.png'), url('/img/footer-bg.jpg');
     background-repeat: no-repeat, no-repeat;
-    background-position: 75%, center;
+    background-position: 75%, left top;
     background-size: 30%, cover;
     color: #fff;
 
