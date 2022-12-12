@@ -1,12 +1,14 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
+import AppIcons from './components/AppIcons.vue'
 import AppFooter from './components/AppFooter.vue'
 
 export default {
   name: "App",
   components: {
     AppHeader,
-    AppFooter,
+    AppIcons,
+    AppFooter
   }
 }
 </script>
@@ -14,6 +16,8 @@ export default {
 <template>
 
   <AppHeader />
+
+  <AppIcons />
 
   <AppFooter />
   
