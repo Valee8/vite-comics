@@ -77,7 +77,7 @@ export default {
             <nav>
                 <ul>
                     <li v-for="(links, index) in headerLinks" :key="index">
-                        <a :href="links.url">
+                        <a :href="links.url" :class="{active: links.active}">
                             {{links.text}}
                             <div :class="{border: links.active}"></div>
                         </a>
@@ -100,6 +100,8 @@ header {
     .container {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        height: 95px;
     }
 
     ul {
@@ -120,10 +122,6 @@ header {
                 position: absolute;
                 bottom: 0;
             }
-            
-            &:hover a {
-                color: $hover;
-            }
 
         }
 
@@ -135,6 +133,10 @@ header {
             text-transform: uppercase;
             color: #5E5F5E;
             font-weight: bold;
+
+            &:hover, &.active {
+                color: $hover;
+            }
         }
     }
 }
