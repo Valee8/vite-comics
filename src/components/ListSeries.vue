@@ -137,7 +137,7 @@ h1 {
 .btn-load {
     display: flex;
     justify-content: center;
-    padding-bottom: 15px;
+    padding: 15px 0;
 
     a {
         color: $primary-color;
