@@ -32,7 +32,7 @@ export default {
         };
     },
     methods: {
-        getImagePath: function(imgPath) {
+        getImagePath: function (imgPath) {
             return new URL(imgPath, import.meta.url).href;
         }
     }
@@ -47,12 +47,13 @@ export default {
         <ul>
             <li v-for="(icon, index) in icons" :key="index">
                 <a :href="icon.url">
-                    <img :src="getImagePath(`/img/${icon.img}`)" :alt="icon.text" :class="'icons-' + index"> {{icon.text}} 
+                    <img :src="getImagePath(`/img/${icon.img}`)" :alt="icon.text" :class="'icons-' + index">
+                    {{ icon.text }}
                 </a>
             </li>
         </ul>
     </div>
-    
+
 </template>
 
 <style lang="scss" scoped>
@@ -91,5 +92,4 @@ export default {
         }
     }
 }
-
 </style>

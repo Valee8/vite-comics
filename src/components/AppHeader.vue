@@ -59,7 +59,7 @@ export default {
         };
     },
     methods: {
-        getImagePath: function(imgPath) {
+        getImagePath: function (imgPath) {
             return new URL(imgPath, import.meta.url).href;
         }
     }
@@ -77,16 +77,16 @@ export default {
             <nav>
                 <ul>
                     <li v-for="(links, index) in headerLinks" :key="index">
-                        <a :href="links.url" :class="{active: links.active}">
-                            {{links.text}}
-                            <div :class="{border: links.active}"></div>
+                        <a :href="links.url" :class="{ active: links.active }">
+                            {{ links.text }}
+                            <div :class="{ border: links.active }"></div>
                         </a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    
+
 </template>
 
 <style lang="scss" scoped>
@@ -137,7 +137,8 @@ header {
                     bottom: 0;
                 }
 
-                &:hover, &.active {
+                &:hover,
+                &.active {
                     color: $hover;
                 }
             }
@@ -145,5 +146,4 @@ header {
         }
     }
 }
-
 </style>
