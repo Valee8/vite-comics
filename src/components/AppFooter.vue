@@ -4,6 +4,7 @@ import AppIcons from './AppIcons.vue'
 
 
 export default {
+    name: "AppFooter",
     components: {
         AppIcons,
     },

@@ -2,6 +2,7 @@
 import SeriesCard from './SeriesCard.vue'
 
 export default {
+    name: "ListSeries",
     components: {
         SeriesCard,
     },
