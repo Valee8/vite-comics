@@ -1,7 +1,6 @@
 <script>
 import AppHeader from './components/AppHeader.vue'
 import ListSeries from './components/ListSeries.vue'
-import AppIcons from './components/AppIcons.vue'
 import AppFooter from './components/AppFooter.vue'
 
 export default {
@@ -9,7 +8,6 @@ export default {
   components: {
     AppHeader,
     ListSeries,
-    AppIcons,
     AppFooter,
   }
 }
@@ -24,8 +22,6 @@ export default {
     <ListSeries />
 
   </main>
-
-  <AppIcons />
 
   <AppFooter />
 

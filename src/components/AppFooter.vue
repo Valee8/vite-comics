@@ -1,6 +1,12 @@
 <script>
 
+import AppIcons from './AppIcons.vue'
+
+
 export default {
+    components: {
+        AppIcons,
+    },
     data() {
         return {
             textButton: 'Sign-Up Now!',
@@ -169,6 +175,8 @@ export default {
 
 <template>
     <footer>
+
+        <AppIcons />
 
         <div class="container">
             <div class="list-links">
