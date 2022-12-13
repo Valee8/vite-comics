@@ -86,6 +86,8 @@ export default {
                 </ul>
             </div>
         </nav>
+
+        <div class="jumbotron"></div>
     </header>
 
 </template>
@@ -148,6 +150,12 @@ header {
             }
 
         }
+    }
+
+    .jumbotron {
+        background-image: url('/img/jumbotron.jpg');
+        background-size: cover;
+        min-height: 320px;
     }
 }
 </style>
