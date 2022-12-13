@@ -60,7 +60,7 @@ export default {
                             url: '#',
                         }
                     ]
-                
+
                 },
 
                 {
@@ -111,13 +111,13 @@ export default {
                             url: '#',
                         }
                     ]
-                
+
                 },
 
                 {
                     title: 'Sites',
                     links: [
-                    {
+                        {
                             text: 'DC',
                             url: '#',
                         },
@@ -138,7 +138,7 @@ export default {
                             url: '#',
                         }
                     ]
-                
+
                 },
                 {
                     title: 'Shop',
@@ -152,14 +152,14 @@ export default {
                             url: '#',
                         },
                     ]
-                
+
                 },
 
             ]
         };
     },
     methods: {
-        getImagePath: function(imgPath) {
+        getImagePath: function (imgPath) {
             return new URL(imgPath, import.meta.url).href;
         }
     }
@@ -174,13 +174,13 @@ export default {
             <div class="list-links">
                 <div v-for="(footer, index) in footerLinks" :key="index" class="footer-list">
                     <h3>
-                        {{footer.title}}
+                        {{ footer.title }}
                     </h3>
 
                     <ul>
                         <li v-for="link in footer.links" :key="index">
                             <a :href="link.url">
-                                {{link.text}}
+                                {{ link.text }}
                             </a>
                         </li>
                     </ul>
@@ -193,12 +193,12 @@ export default {
             <div class="container">
 
                 <a href="#" class="link-button">
-                    {{textButton}}
+                    {{ textButton }}
                 </a>
 
                 <div class="social-links">
                     <h3>
-                    {{textFollow}}
+                        {{ textFollow }}
                     </h3>
 
                     <ul>
@@ -229,9 +229,9 @@ footer {
 
     .list-links {
         display: flex;
+        flex-wrap: wrap;
         max-width: 35%;
-        position: relative;
-        padding: 40px 0 60px 0;
+        padding: 40px 0;
     }
 
     h3 {
@@ -242,11 +242,6 @@ footer {
     .footer-list {
         width: calc(100% / 3);
 
-        &:last-child {
-            position: absolute;
-            bottom: 45px;
-            left: 0;
-        }
 
         ul {
             list-style-type: none;
@@ -256,8 +251,8 @@ footer {
                 line-height: 15px;
 
                 a {
-                color: rgba(255, 255, 255, .6);
-                font-size: 0.6rem;
+                    color: rgba(255, 255, 255, .6);
+                    font-size: 0.6rem;
                 }
 
             }
@@ -273,7 +268,7 @@ footer {
             display: flex;
         }
 
-        .container {  
+        .container {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -294,14 +289,14 @@ footer {
             font-size: 0.8rem;
             font-weight: bold;
         }
-        
+
         ul {
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 20px;
             list-style-type: none;
-            
+
             img {
                 width: 30px;
             }
