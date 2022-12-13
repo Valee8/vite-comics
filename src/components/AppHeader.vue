@@ -99,7 +99,7 @@ header {
     font-size: 0.7rem;
 
     nav {
-        background-color: #fff;
+        background-color: $primary-color;
         height: 95px;
 
         .container {
@@ -136,7 +136,7 @@ header {
                 font-weight: bold;
 
                 .border {
-                    background-color: $hover;
+                    background-color: $secondary-color;
                     height: 4px;
                     width: 35px;
                     position: absolute;
@@ -145,7 +145,7 @@ header {
 
                 &:hover,
                 &.active {
-                    color: $hover;
+                    color: $secondary-color;
                 }
             }
 

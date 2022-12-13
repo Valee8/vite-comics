@@ -118,15 +118,14 @@ export default {
 @use '../styles/partials/variables' as *;
 
 h1 {
-    color: #fff;
-    background-color: $hover;
+    color: $primary-color;
+    background-color: $secondary-color;
     padding: 5px 10px;
     display: inline-block;
     text-transform: uppercase;
     font-size: 0.9rem;
     position: relative;
     top: -15px;
-    align-self: flex-start;
 }
 
 .list-cards {
@@ -140,8 +139,8 @@ h1 {
     padding-bottom: 15px;
 
     a {
-        color: #fff;
-        background-color: $hover;
+        color: $primary-color;
+        background-color: $secondary-color;
         padding: 4px 40px;
         text-transform: uppercase;
         font-size: 0.8rem;

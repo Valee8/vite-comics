@@ -225,7 +225,7 @@ footer {
     background-repeat: no-repeat, no-repeat;
     background-position: 75%, left top;
     background-size: 30%, cover;
-    color: #fff;
+    color: $primary-color;
 
     .list-links {
         display: flex;
@@ -278,11 +278,11 @@ footer {
         h3 {
             align-self: center;
             padding-right: 30px;
-            color: $hover;
+            color: $secondary-color;
         }
 
         .link-button {
-            border: 2px solid $hover;
+            border: 2px solid $secondary-color;
             color: #fff;
             text-transform: uppercase;
             padding: 8px;

@@ -61,7 +61,7 @@ export default {
 
 .icons {
     height: 120px;
-    background-color: $hover;
+    background-color: $secondary-color;
 
     ul {
         display: flex;

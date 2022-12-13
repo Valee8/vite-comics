@@ -25,7 +25,7 @@ export default {
     margin: 12px;
 
     h4 {
-        color: #fff;
+        color: $primary-color;
         font-weight: normal;
         text-transform: uppercase;
         font-size: 0.7rem;
