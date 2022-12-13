@@ -91,10 +91,17 @@ export default {
 <template>
 
     <section>
+
         <div class="container">
+
+            <h1>
+                Current Series
+            </h1>
+
             <div class="list-cards">
                 <SeriesCard v-for="(series, index) in listSeries" :key="index" :list="series" />
             </div>
+
         </div>
 
     </section>
@@ -103,6 +110,17 @@ export default {
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
+
+h1 {
+    color: #fff;
+    background-color: $hover;
+    padding: 5px 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    position: relative;
+    top: -15px;
+}
 
 .list-cards {
     display: flex;
