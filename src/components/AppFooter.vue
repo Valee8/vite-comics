@@ -1,12 +1,12 @@
 <script>
 
-import AppIcons from './AppIcons.vue'
+import LinksFooter from './LinksFooter.vue'
 
 
 export default {
     name: "AppFooter",
     components: {
-        AppIcons,
+        LinksFooter,
     },
     data() {
         return {
@@ -177,7 +177,7 @@ export default {
 <template>
     <footer>
 
-        <AppIcons />
+        <LinksFooter />
 
         <div class="container">
             <div class="list-links">
