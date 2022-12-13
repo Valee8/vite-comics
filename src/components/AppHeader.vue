@@ -69,12 +69,13 @@ export default {
 <template>
 
     <header>
-        <div class="container">
-            <a href="#">
-                <img :src="getImagePath(`/img/${imgLogo}`)" alt="Logo DC" class="logo">
-            </a>
+        <nav>
+            <div class="container">
 
-            <nav>
+                <a href="#">
+                    <img :src="getImagePath(`/img/${imgLogo}`)" alt="Logo DC" class="logo">
+                </a>
+
                 <ul>
                     <li v-for="(links, index) in headerLinks" :key="index">
                         <a :href="links.url" :class="{ active: links.active }">
@@ -83,8 +84,8 @@ export default {
                         </a>
                     </li>
                 </ul>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
 
 </template>
@@ -93,15 +94,18 @@ export default {
 @use '../styles/partials/variables' as *;
 
 header {
-    background-color: #fff;
     font-size: 0.7rem;
-    height: 95px;
 
-    .container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    nav {
+        background-color: #fff;
         height: 95px;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 95px;
+        }
     }
 
     .logo {
