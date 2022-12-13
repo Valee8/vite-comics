@@ -102,6 +102,12 @@ export default {
                 <SeriesCard v-for="(series, index) in listSeries" :key="index" :list="series" />
             </div>
 
+            <div class="btn-load">
+                <a href="#">
+                    Load More
+                </a>
+            </div>
+
         </div>
 
     </section>
@@ -120,10 +126,25 @@ h1 {
     font-size: 0.9rem;
     position: relative;
     top: -15px;
+    align-self: flex-start;
 }
 
 .list-cards {
     display: flex;
     flex-wrap: wrap;
+}
+
+.btn-load {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+
+    a {
+        color: #fff;
+        background-color: $hover;
+        padding: 4px 40px;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+    }
 }
 </style>
